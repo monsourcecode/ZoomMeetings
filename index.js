@@ -78,7 +78,7 @@ app.get('/', (req, res) => {
                   // Step 5. Delete a user's meeting.
                   //Find the reference guide for Delete Meeting API here: https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meetingdelete
                    
-                    request.post({
+                    request.delete({
                     //Additionally, if your meeting has an occurence_id, you can provide the occurence_id as a Query parameter along with the url.
                      url: 'https://api.zoom.us/v2/meetings/{meetingID}',
                      headers: {'content-type' : 'application/json'},
