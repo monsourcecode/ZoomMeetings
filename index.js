@@ -39,7 +39,7 @@ app.get('/', (req, res) => {
                         Check https://marketplace.zoom.us/docs/api-reference/zoom-api/meetings/meetingcreate for reference. */
 
                 request.post({
-                     url: 'https://api.zoom.us/v2//users/me/meetings',
+                     url: 'https://api.zoom.us/v2/users/me/meetings',
                      headers: {'content-type' : 'application/json'},
                      body:JSON.stringify({"topic": "{YourMeetingTopic}", "type":"{YourMeetingType- must be int, choose from(1, 2, 3 ,8)}", "start_time": "{MeetingStartTime - e.g: 2019-04-19T23:00:00Z}", "duration": "{MeetingDurationInMinutes - must be int}"})
                  },
